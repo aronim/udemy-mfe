@@ -1,6 +1,6 @@
 {
   "name": "container",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "scripts": {
     "build": "webpack --config config/webpack.prod.js",
     "start": "webpack serve --config config/webpack.dev.js"
