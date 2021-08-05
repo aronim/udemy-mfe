@@ -1,16 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
 import { mount } from "marketing/MarketingApp";
+import MountableApp from "./MountableApp";
 
-const MarketingApp = () => {
-
-    const ref = useRef(null);
-
-    useEffect(() => {
-        mount(ref.current)
-    }, []);
-
-    return <div ref={ ref }/>
-}
+const MarketingApp = (props) => <MountableApp mount={ mount } { ...props } />
 
 export default MarketingApp;
